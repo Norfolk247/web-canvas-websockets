@@ -1,0 +1,80 @@
+@import "vars";
+.toolbar {
+  top: 0;
+  width: 100%;
+  height: $bar-height;
+  background-color: white;
+  border-bottom: 1px solid black;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  &_btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    background-size: cover;
+  }
+  .brush {
+    background: url('../assets/img/brush.png') no-repeat center center;
+  }
+  .rect {
+    background: url('../assets/img/rect.png') no-repeat center center;
+  }
+  .circle {
+    background: url('../assets/img/circle.png') no-repeat center center;
+  }
+  .line {
+    background: url('../assets/img/line.png') no-repeat center center;
+  }
+  .eraser {
+    background: url('../assets/img/eraser.png') no-repeat center center;
+  }
+  .undo {
+    margin-left: auto;
+    background: url('../assets/img/undo.png') no-repeat center center;
+  }
+  .redo {
+    background: url('../assets/img/redo.png') no-repeat center center;
+  }
+  .save {
+    margin-right: 10px;
+    background: url('../assets/img/save.png') no-repeat center center;
+  }
+}
+.settingbar {
+  top: 40px;
+  width: 100%;
+  height: $bar-height;
+  border-bottom: 1px solid black;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+  display: flex;
+  background: white;
+  &_btn {
+    background: white;
+    margin: 0 10px;
+    text-decoration: none;
+    user-select: none;
+  }
+  .no-fill {
+    text-decoration: line-through;
+  }
+  input[type=number] {
+    border: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 30px;
+    margin: 0;
+    outline: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
